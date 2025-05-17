@@ -1,0 +1,280 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #f39c12;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #e67e22;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Introduction */
+#intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#intro h1 {
+    font-size: 36px;
+    color: #6c6c3f;
+}
+
+#intro p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Search Bar */
+#search-bar {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 60%;
+    max-width: 600px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Recent Posts */
+#recent-posts h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #6c6c3f;
+}
+
+#recent-posts article {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; /* Ensure space between images and text */
+    align-items: center;
+    flex-wrap: wrap; /* Make images wrap to new row on smaller screens */
+}
+
+/* Image Styling */
+#recent-posts article img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;  /* Restrict image width */
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Text and Image Layout */
+#recent-posts article h3 a {
+    text-decoration: none;
+    color: #6c6c3f;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#recent-posts p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+#recent-posts img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer-content a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#footer-content p {
+    font-size: 16px;
+}
+
+/* Contact Form Styling */
+#contact-form {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form h1 {
+    font-size: 28px;
+    color: #6c6c3f;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+button[type="submit"] {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e67e22;
+}
+
+/* About Page Styling */
+#about-content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#about-content h1 {
+    font-size: 32px;
+    color: #6c6c3f;
+    margin-bottom: 20px;
+}
+
+#about-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    #search-input {
+        width: 80%;
+    }
+
+    #recent-posts article {
+        padding: 10px;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    #contact-form {
+        padding: 15px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+
+    #about-content {
+        padding: 15px;
+    }
+
+    /* Image Layout in Posts */
+    #recent-posts article {
+        flex-direction: column;  /* Stack images and text vertically on smaller screens */
+        text-align: center;
+    }
+
+    #recent-posts article img {
+        max-width: 90%;  /* Allow images to scale down on smaller screens */
+    }
+}
